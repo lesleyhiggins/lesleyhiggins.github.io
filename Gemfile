@@ -1,7 +1,6 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-# gem "rails"
-gem "jekyll"
-
+gem 'jekyll-environment-variables'
+gem 'jekyll-paginate'
+gem "webrick", "~> 1.7"
+gem "jekyll", "~> 4.2"
