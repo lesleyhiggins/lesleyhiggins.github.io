@@ -77,7 +77,7 @@ analytics:
   google_analytics_id: ""
 
 disqus:
-  shortname: "zerostatic" # Your disqus shortcode. leave this blank to disable comments globally
+  shortname: "" # Your disqus shortcode. leave this blank to disable comments globally
 
 mailchimp:
   form_action_url: https://zerostatic.us13.list-manage.com/subscribe/post?u=675276692aebec1c007f8156d&amp;id=3e3da720c2
@@ -124,7 +124,7 @@ fonts:
   logo: "Open Sans"
 
 logo:
-  logo_text: "Jekyll Origin"
+  logo_text: "devLesley"
   logo_image: assets/images/logo/logo.png
   logo_image_mobile: assets/images/logo/logo-mobile.png
   logo_image_invert: assets/images/logo/logo-invert.png
@@ -160,6 +160,6 @@ footer:
 bottom:
   enable_bottom: false # show/hide the entire bottom (below the footer)
   enable_bottom_menu: true # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2021 Zerostatic Themes"
+  copyright_text: "© 2024 devLesley LLC. All Rights Reserved"
 
 
