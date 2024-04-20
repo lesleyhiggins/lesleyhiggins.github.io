@@ -16,7 +16,7 @@ I know I am not the only one who has, despite best efforts to maintain a logical
 
 There are a few solutions to this, none of which are “just leave every DE in the parent folder so it’s easier to search.”
 
-### Solutions to Enhance DE Lookup
+#### Solutions to Enhance DE Lookup
 
 - [**Chrome Extension by DESelect**](https://chromewebstore.google.com/detail/deselect-search-in-salesf/ekppadhnhmemajkdbkohalhoncnfhmbm?pli=1): This tool has worked for me on and off throughout the years. 
 - [**Custom Search Form on a CloudPage**](https://sfmarketing.cloud/2019/10/14/find-a-data-extension-and-its-folder-path-using-ssjs/): Alternatively, you can craft your own search form on a CloudPage.
@@ -113,9 +113,9 @@ for (var i = 0; i < FindDE.length; i++) { // Loop through the results
 When I type in the command "/delookup subscriber" I receive the following results:
 
 ```text
-Subscriber > Data Extensions > My Folder > Subfolder > Sub-Subfolder
-Subscriber > Data Extensions > My Folder > Subfolder
-Subscriber > Data Extensions > My Folder
+Data Extensions > Perference Center Data > Humans > Subscriber_Profile
+Data Extensions > Contact Management > Converted Subscribers
+Data Extensions > Contact Management > Duplicate Subscribers
 ```
 
 Invoking this Slash Command yields a clear, ephemeral response showing the DE and its folder path, providing quick access to the needed information without overwhelming the channel. By default, messages sent in response to Slack slash commands are set to ephemeral. Ephemeral messages do not persist across sessions, desktop and mobile apps, or reloads. Once the session is closed, ephemeral messages will disappear and cannot be recovered.
