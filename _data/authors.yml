@@ -34,3 +34,9 @@ shyam_wolf:
   job: "Product Manager"
   image: "assets/images/team/shyam-wolf.png"
   bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in."
+lesley_higgins:
+  title: "Lesley Higgins"
+  name: "Lesley Higgins"
+  job: "Marketing Cloud Architect"
+  image: "assets/images/team/lesley-higgins.jpg"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in."
