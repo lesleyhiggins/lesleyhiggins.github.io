@@ -5,8 +5,8 @@ date: 2024-03-17T09:49:03Z
 authors: ["Lesley Higgins"]
 categories: ["Slack", "MarTech Hacks", "Marketing Cloud"]
 description: Dive into the simplicity of integrating a Slack Slash Command with Salesforce Marketing Cloud for quick Data Extension lookups.
-thumbnail: "/assets/images/gen/blog/slack-sfmc-thumbnail.png"
-image: "/assets/images/gen/blog/slack-sfmc.webp"
+thumbnail: "/assets/images/gen/blog/Slack-SFMC-thumbnail.png" 
+image: "/assets/images/gen/blog/Slack-SFMC.png"
 comments: false
 ---
 
