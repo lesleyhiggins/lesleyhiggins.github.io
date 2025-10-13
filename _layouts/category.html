@@ -7,8 +7,10 @@ body_classes: page-category
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12">
+        {% assign display_category = page.category | replace: "-", " " | split: " " | map: "capitalize" | join: " " %}
+
         {% include framework/blocks/sections/title.html
-          title=page.category | replace: "-", " " | split: " " | map: "capitalize" | join: " "
+          title=display_category
           description=page.description
           image=page.image
           badge="category"
