@@ -1,9 +1,11 @@
+---
 layout: post
 title: "Agent Builder to Marketing Cloud Engagement"
 date: 2025-10-18
 categories: ["marketing-cloud", "salesforce", "ai"]
 description: "A recap of my TDX Hackathon project: using Salesforce's Agent Builder to automate Marketing Cloud email creation through Apex, AI, and Slack integration."
 thumbnail: /assets/images/gen/blog/2025-hackathon-project.png
+---
 
 <p align="center">
   <img src="/assets/images/gen/blog/2025-hackathon-project.png" alt="2025 Hackathon Project illustration showing camp counselor, AI, and Marketing Cloud email creation" width="800">
