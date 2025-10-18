@@ -5,8 +5,8 @@ date: 2022-06-01
 authors: ["Lesley Higgins"]
 categories: ["Marketing Cloud", "web3"]
 description: Explore how to implement token gating on a CloudPage using MetaMask, a popular crypto wallet, to provide a seamless user authentication experience leveraging blockchain technology.
-thumbnail: "/assets/images/gen/blog/Marketing Cloud 🤝 web3- How to Token Gate a CloudPage Thumbnail.png"
-image: "/assets/images/gen/blog/Marketing Cloud 🤝 web3- How to Token Gate a CloudPage Thumbnail.png"
+thumbnail: "/assets/images/gen/blog/tokengate-a-cloud-page.png"
+image: "/assets/images/gen/blog/tokengate-a-cloud-page.png"
 ---
 
 Web3. What does that really mean? At its most basic level, web3 is "read, write, and own." Part of that ownership is interoperability of identity - being able to take who you are and what you own digitally with you as you traverse around websites. Imagine not having to remember your username and password for every website because you can log in with one identity.
