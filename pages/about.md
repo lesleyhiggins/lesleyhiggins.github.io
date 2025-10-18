@@ -4,44 +4,31 @@ title: "About Lesley"
 date: 2023-03-19
 header_transparent: false
 permalink: "/about/"
-description: "devLesley solutions blog."
+description: "Smart, scalable, and a little bit nerdy — Lesley Higgins builds creative Salesforce and Marketing Cloud solutions that work."
 image: "/assets/images/gen/content/content-5.webp"
 ---
 
-# Creating Modern Websites
+## Hi, I’m Lesley Higgins
 
-Web design encompasses many different skills and disciplines in the production and maintenance of websites.
+I’m a Marketing Cloud Developer, Salesforce enthusiast, and maker of solutions that bring business value through technology — all from my base just outside Denver, CO. With multiple certifications including Marketing Cloud Advanced Cross-Channel, Platform App Builder, and Admin, I’ve built a career helping brands turn ideas into automated, data-driven workflows.  [oai_citation:0‡LinkedIn](https://www.linkedin.com/in/lesleyhiggins?utm_source=chatgpt.com)
 
-Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all. Web design partially overlaps web engineering in the broader scope of web development.
+### My Journey  
+My path into Salesforce started in data and campaign operations — I began by managing databases and even worked on campaign finance functions in New York City. That experience taught me two things: clean data matters, and automation makes the difference.  [oai_citation:1‡Bold.pro](https://us.bold.pro/my/lesley-higgins?utm_source=chatgpt.com)
 
-## What is Web Design?
+When I discovered Salesforce Marketing Cloud, I found the intersection of my interests: marketing, data, and technology. Since then, I’ve earned multiple certifications and worked on projects spanning automation, email strategy, data modeling, and now even AI-powered agents. One of my highlights: participating in Hackathon 2025 at Salesforce’s TDX, building a full prototype that connected custom objects, Slack commands, Agent-style automation and Marketing Cloud emails in under 48 hours.
 
-User experience is about how a user interacts with, and experiences, a particular product, system or service. As a UX designer, you should consider the Why, What and How of product use.
+### What I Do  
+- Build end-to-end Marketing Cloud integrations — from data extensions and automation to API-driven content creation.
+- Leverage Salesforce Platform features (Apex, custom objects, triggers) to extend what’s possible in marketing automation.
+- Explore emerging technologies (Web3, token-gated access, blockchain data) and translate them into real-world marketing workflows.  [oai_citation:2‡X (formerly Twitter)](https://x.com/le_diable?utm_source=chatgpt.com)
+- Share what I learn — through this blog, community contributions, and speaking engagements.
+- Outside of code, you’ll catch me teaching my six-year-old to code video games, cheering on the Colorado Rockies, or getting my hands dirty in the garden.
 
-{% include framework/shortcodes/figure.html src="/assets/images/gen/content/content-1.webp" title="Steve Francia" caption="Designing in Figma" alt="Photo of designing a website in Figma" link="https://figma.com" target="_blank" %}
+### Why I Blog  
+I started **devLesley** to document the solutions I build and the challenges I solve. If you’re a marketer, admin, or consultant working with Marketing Cloud or Salesforce, you’ll find this space useful. Expect code samples, real-world project breakdowns, and practical tools you can apply today.
 
-## Front-end Development
+### Let’s Connect  
+Whether you’re building a marketing stack, exploring automation strategies, or want to talk tools and tactics — let’s connect. Feel free to reach out via [Contact](/contact) and we’ll see how technology can work for your growth.
 
-The What addresses the things people can do with a product—its functionality. Finally, the How relates to the design of functionality in an accessible and aesthetically pleasant way. UX designers start with the Why before determining the What and then, finally, the How in order to create products that users can form meaningful experiences with. In software designs, you will need to ensure the product’s “substance” comes through an existing device and offers a seamless, fluid experience.
-
-> As a UX designer, you should consider the Why, What and How of product use.
-
-Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
-
-## Design Systems
-
-A Design System is a set of interconnected patterns and shared practices coherently organized to aid in digital product design and development of products such as apps or websites.
-
-{% include framework/shortcodes/youtube.html id='2M6dJ2Uynhg' %}
-
-## Process
-
-There are two primary jobs involved in creating a website: the web designer and web developer, who often work closely together on a website. The web designers are responsible for the visual aspect, which includes the layout, coloring and typography of a web page.
-
-- User experience research
-- Visual design and illustration
-- Programming and coding
-
-![Design In Figma](/assets/images/gen/content/content-2.webp)
-
-Web designers will also have a working knowledge of markup languages such as HTML and CSS, although the extent of their knowledge will differ from one web designer to another.
+Thanks for stopping by —  
+**Lesley**
