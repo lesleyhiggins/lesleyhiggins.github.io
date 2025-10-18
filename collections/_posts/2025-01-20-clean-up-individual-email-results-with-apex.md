@@ -4,11 +4,11 @@ title: "Clean up Individual Email Results with Apex"
 date: 2025-01-20
 categories: ["marketing-cloud"]
 description: "Apex code and strategies to bulk delete or deduplicate IndividualEmailResult records safely in Salesforce."
-thumbnail: /assets/images/blog/clean-up-individual-email-results-with-apex-hero.png
+thumbnail: /assets/images/gen/blog/clean-up-individual-email-results-with-apex-hero.png
 ---
 
 <p align="center">
-  <img src="/assets/images/blog/clean-up-individual-email-results-with-apex-hero.png" alt="Clean up Individual Email Results with Apex illustration" width="800">
+  <img src="/assets/images/gen/blog/clean-up-individual-email-results-with-apex-hero.png" alt="Clean up Individual Email Results with Apex illustration" width="800">
 </p>
 
 Marketing Cloud Connect (MCC) is not going anywhere anytime soon, despite Salesforce’s push towards Data Cloud. The primary reason is that the refresh schedule with Data Cloud just cannot keep up with MCC at this time.
