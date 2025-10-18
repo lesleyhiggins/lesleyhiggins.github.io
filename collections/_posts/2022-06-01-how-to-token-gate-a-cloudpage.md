@@ -9,6 +9,10 @@ thumbnail: "/assets/images/gen/blog/tokengate-a-cloud-page.png"
 image: "/assets/images/gen/blog/tokengate-a-cloud-page.png"
 ---
 
+<p align="center">
+  <img src="/assets/images/gen/blog/tokengate-a-cloud-page.png" alt="Clean up Individual Email Results with Apex illustration" width="800">
+</p>
+
 Web3. What does that really mean? At its most basic level, web3 is "read, write, and own." Part of that ownership is interoperability of identity - being able to take who you are and what you own digitally with you as you traverse around websites. Imagine not having to remember your username and password for every website because you can log in with one identity.
 
 One approach to that is being able to log into websites with a crypto wallet. There are several wallets, but we are going to start with one of the most popular: MetaMask.
