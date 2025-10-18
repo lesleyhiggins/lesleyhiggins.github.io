@@ -3,7 +3,7 @@ layout: post
 title: "Agent Builder to Marketing Cloud Engagement"
 date: 2025-10-18
 categories: ["marketing-cloud", "salesforce", "ai"]
-description: "A recap of my TDX Hackathon project: using Salesforce's Agent Builder to automate Marketing Cloud email creation through Apex, AI, and Slack integration."
+description: "A recap of my 2025 TDX Hackathon project: using Salesforce's Agent Builder to automate Marketing Cloud email creation through Apex, AI, and Slack integration."
 thumbnail: /assets/images/gen/blog/2025-hackathon-project.png
 ---
 
@@ -19,11 +19,13 @@ I decided to work solo on this challenge because I wanted to force myself to lea
 
 You can watch a quick demo of the final prototype below before diving into the build details.
 
+<div class="video-embed">
 <iframe width="800" height="450"
   src="https://www.youtube.com/embed/En-I8jNU8zU"
   title="Agent Builder to Marketing Cloud Engagement Demo"
   frameborder="0"
   allowfullscreen></iframe>
+</div>
 
 Here’s what I put together:
 
