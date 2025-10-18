@@ -7,13 +7,13 @@ description: "Apex code and strategies to bulk delete or deduplicate IndividualE
 thumbnail: /assets/images/gen/blog/clean-up-individual-email-results-with-apex-hero.png
 ---
 
+
 <p align="center">
   <img src="/assets/images/gen/blog/clean-up-individual-email-results-with-apex-hero.png" alt="Clean up Individual Email Results with Apex illustration" width="800">
 </p>
 
-Marketing Cloud Connect (MCC) is not going anywhere anytime soon, despite Salesforce’s push towards Data Cloud. The primary reason is that the refresh schedule with Data Cloud just cannot keep up with MCC at this time.
 
-![Clean up Individual Email Results with Apex](/assets/images/gen/blog/clean-up-individual-email-results-with-apex-hero.png)
+Marketing Cloud Connect (MCC) is not going anywhere anytime soon, despite Salesforce’s push towards Data Cloud. The primary reason is that the refresh schedule with Data Cloud just cannot keep up with MCC at this time.
 
 So, it’s time to tackle the biggest issue with MCC: Individual Email Results (IERs). 
 
@@ -78,8 +78,6 @@ Apex Class: IERCleanupBatch
 {% gist lesleyhiggins/75da689f72a4941b7bf154c78ed49228 %}
 
 
-
-
 3. Build Batch Apex for Individual Link Level Details Cleanup
 
 Steps:
@@ -93,8 +91,6 @@ Paste in the following code. This will retrieve IERs created prior to 180 days a
 Apex Class: IndividualLinkCleanupBatch
 
 {% gist lesleyhiggins/c6da3971b921f3355b693cb7fc565ee0 %}
-
-
 
 
 4. Evaluate Storage Usage in Production
@@ -126,8 +122,6 @@ Apex Class: MorningCleanupScheduler
 {% gist lesleyhiggins/c4278b7339167561020d300935ef1ad6 %}
 
 
-
-
 6. Create a Test Class
 
 You cannot deploy Apex from a sandbox to production without a test class. A test class will travel to production with your executable Apex and, as the name suggests, test it. Essentially, it creates test records and then deletes test records for each of the processes. Getting test classes to work actually took me more time than the original Apex because of required fields and dependencies that come with creating these records. This is why I recommend using a partial sandbox, because you are going to need a send definition (or triggered send definition) in order to create a test IER. 
@@ -148,8 +142,6 @@ Technically you should write a lookup to the Send Definition object to retrieve 
 Test Class: MorningCleanupSchedulerTest
 
 {% gist lesleyhiggins/a03972525dde2a8a04388316d85a6d60 %}
-
-
 
 
 7. Push to Production
