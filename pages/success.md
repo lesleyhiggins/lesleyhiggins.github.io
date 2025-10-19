@@ -5,4 +5,6 @@ layout: basic
 permalink: "/contact/success"
 ---
 
-## Your form was submitted
+## Thanks for reaching out!
+
+Your message was successfully sent. I’ll get back to you soon.
