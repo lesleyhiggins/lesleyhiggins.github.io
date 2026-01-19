@@ -72,3 +72,10 @@ html[data-mode='dark'] {
 }
 
 @import 'style';
+
+/* Prevent hyphenated category titles (e.g. data-360) from wrapping */
+.title h1,
+.title h2 {
+  white-space: nowrap;
+  flex-shrink: 0;
+}

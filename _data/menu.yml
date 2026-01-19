@@ -9,12 +9,15 @@ main:
       - name: "Marketing Cloud"
         description: "Posts about Salesforce Marketing Cloud, email strategy, and automation."
         url: /category/marketing-cloud/
-      - name: "Web3"
-        description: "Articles on blockchain, NFTs, and decentralized applications."
-        url: /category/web3/
       - name: "Data 360"
         description: "Deep dives into data unification, segmentation, and analytics."
         url: /category/data-360/
+      - name: "Salesforce CRM"
+        description: "Articles on Salesforce CRM, customer relationship management, and sales automation."
+        url: /category/salesforce/
+      - name: "Web3"
+        description: "Articles on blockchain, NFTs, and decentralized applications."
+        url: /category/web3/
       - name: "Personal Projects"
         description: "Writing on creative and technical side projects."
         url: /category/personal-projects/
