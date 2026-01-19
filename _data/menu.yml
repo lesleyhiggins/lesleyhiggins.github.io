@@ -15,6 +15,9 @@ main:
       - name: "Salesforce CRM"
         description: "Articles on Salesforce CRM, customer relationship management, and sales automation."
         url: /category/salesforce/
+      - name: "Slack"
+        description: "Slack from a developers perspective."
+        url: /category/slack/
       - name: "Web3"
         description: "Articles on blockchain, NFTs, and decentralized applications."
         url: /category/web3/
