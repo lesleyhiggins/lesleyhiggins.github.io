@@ -5,12 +5,12 @@ date: 2026-01-19
 authors: ["Lesley Higgins"]
 categories: ["marketing-cloud", "salesforce", "data-360"]
 description: "Essential guidance for Marketing Cloud customers transitioning to Agentforce Marketing. Learn correct Data 360 setup, Person Accounts vs Standard Contact models, identity resolution best practices, and how to avoid costly architectural mistakes that limit scalability."
-thumbnail: /assets/images/gen/blog/Data-360-Mapping.png
+thumbnail: /assets/images/gen/blog/B2BvsB2C.png
 ---
 
 
 <p align="center">
-  <img src="/assets/images/gen/blog/Data-360-Mapping.png" alt="Data 360 mapping with B2B and B2C modeling" width="800">
+  <img src="/assets/images/gen/blog/B2BvsB2C.png" alt="Data 360 mapping with B2B and B2C modeling" width="800">
 </p>
 
 ## Introduction
