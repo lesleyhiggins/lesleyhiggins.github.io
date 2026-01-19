@@ -9,6 +9,10 @@ categories: [Salesforce, Data 360, Marketing Cloud]
 tags: [Salesforce Data 360, Person Accounts, B2B, B2C, Identity Resolution]
 ---
 
+<p align="center">
+  <img src="/assets/images/gen/blog/Data-360-Mapping.png" alt="Data 360 mapping with B2B and B2C modeling" width="800">
+</p>
+
 ## Introduction
 
 If you’re an existing Salesforce Marketing Cloud Engagement customer starting down the path toward **MCE+**, Salesforce’s on-ramp to the on-core Agentforce Marketing, the first major step is standing up **Data 360**.
