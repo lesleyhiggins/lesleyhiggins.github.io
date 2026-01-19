@@ -1,7 +1,7 @@
 # -------------------
 # Jekyll Config
 # --------------------
-baseurl: "lesleyhiggins.github.io"
+baseurl: ""
 url: ""
 permalink: pretty
 markdown: kramdown
@@ -160,6 +160,4 @@ footer:
 bottom:
   enable_bottom: false # show/hide the entire bottom (below the footer)
   enable_bottom_menu: true # if enabled, the bottom menu can be edited in `_data/menu.yml`
-  copyright_text: "© 2024 devLesley LLC. All Rights Reserved"
-
-
+  copyright_text: "© {{ site.time | date: '%Y' }} devLesley LLC. All Rights Reserved"
