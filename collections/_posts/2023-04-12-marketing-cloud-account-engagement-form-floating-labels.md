@@ -3,7 +3,7 @@ layout: post
 title: "Marketing Cloud Account Engagement Form Floating Labels"
 date: 2023-04-14
 authors: ["Lesley Higgins"]
-categories: ["Pardot", "MarTech Hacks", "marketing-cloud"]
+categories: ["marketing-cloud"]
 description: "Explore the integration of Bootstrap 5's floating labels feature with Marketing Cloud Account Engagement forms. This post details how to implement floating labels to improve form aesthetics and functionality, despite the native limitations of Marketing Cloud. It includes practical code examples and customization tips for making your forms more dynamic and user-friendly."
 thumbnail: "/assets/images/gen/blog/MCAE-floating-labels.png"
 image: "/assets/images/gen/blog/MCAE-floating-labels.png"
