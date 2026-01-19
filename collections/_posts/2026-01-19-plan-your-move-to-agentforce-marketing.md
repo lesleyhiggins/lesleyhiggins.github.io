@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Plan Your Move to Agentforce Marketing: Mapping Data 360 for B2B and B2C Marketing"
