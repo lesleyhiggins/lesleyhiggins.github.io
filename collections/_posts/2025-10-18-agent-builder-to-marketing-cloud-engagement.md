@@ -3,7 +3,7 @@ layout: post
 title: "Agent Builder to Marketing Cloud Engagement"
 date: 2025-10-18
 authors: ["Lesley Higgins"]
-categories: ["marketing-cloud", "salesforce", "ai"]
+categories: ["Marketing Cloud", "Aalesforce", "AI"]
 description: "A recap of my 2025 TDX Hackathon project: using Salesforce's Agent Builder to automate Marketing Cloud email creation through Apex, AI, and Slack integration."
 thumbnail: /assets/images/gen/blog/2025-hackathon-project.png
 ---

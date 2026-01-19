@@ -1,5 +1,5 @@
 ---
 layout: category
-category: salesforce
+category: Salesforce
 permalink: /category/salesforce/
 ---

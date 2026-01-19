@@ -3,7 +3,7 @@ layout: post
 title: "Clean up Individual Email Results with Apex"
 date: 2025-01-20
 authors: ["Lesley Higgins"]
-categories: ["marketing-cloud"]
+categories: ["Marketing Cloud", "Salesforce"]
 description: "Apex code and strategies to bulk delete or deduplicate IndividualEmailResult records safely in Salesforce."
 thumbnail: /assets/images/gen/blog/clean-up-individual-email-results-with-apex-hero.png
 ---

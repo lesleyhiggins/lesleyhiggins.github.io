@@ -1,5 +1,5 @@
 ---
 layout: category
-category: data-360
+category: Data 360
 permalink: /category/data-360/
 ---

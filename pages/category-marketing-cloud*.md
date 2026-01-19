@@ -1,5 +1,5 @@
 ---
 layout: category
-category: marketing-cloud
+category: Marketing Cloud
 permalink: /category/marketing-cloud/
 ---
