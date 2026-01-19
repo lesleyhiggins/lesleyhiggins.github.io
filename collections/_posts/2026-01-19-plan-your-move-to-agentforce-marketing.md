@@ -7,13 +7,9 @@ categories: ["marketing-cloud", "salesforce", "data-360"]
 description: "Essential guidance for Marketing Cloud customers transitioning to Agentforce Marketing. Learn correct Data 360 setup, Person Accounts vs Standard Contact models, identity resolution best practices, and how to avoid costly architectural mistakes that limit scalability."
 thumbnail: /assets/images/gen/blog/B2BvsB2C.png
 ---
-
-
 <p align="center">
   <img src="/assets/images/gen/blog/B2BvsB2C.png" alt="Data 360 mapping with B2B and B2C modeling" width="800">
 </p>
-
-## Introduction
 
 If you’re an existing Salesforce Marketing Cloud Engagement customer starting down the path toward **MCE+**, Salesforce’s on-ramp to the on-core Agentforce Marketing, the first major step is standing up **Data 360** (the artist formally known as Data Cloud).
 
