@@ -4,7 +4,7 @@ title: "About Us"
 date: 2023-03-19
 header_transparent: false
 permalink: "/about/"
-description: "Smart, scalable, and a little bit nerdy — we build creative Salesforce and Marketing Cloud solutions that work."
+description: "Smart, scalable, and a little bit nerdy. We build creative Salesforce and Marketing Cloud solutions that work."
 image: "/assets/images/gen/content/content-5.webp"
 ---
 
