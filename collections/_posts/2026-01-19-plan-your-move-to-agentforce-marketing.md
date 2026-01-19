@@ -7,6 +7,7 @@ date: 2026-01-19
 layout: post
 categories: [Salesforce, Data 360, Marketing Cloud]
 tags: [Salesforce Data 360, Person Accounts, B2B, B2C, Identity Resolution]
+thumbnail: /assets/images/gen/blog/Data-360-Mapping.png
 ---
 
 <p align="center">
@@ -15,7 +16,7 @@ tags: [Salesforce Data 360, Person Accounts, B2B, B2C, Identity Resolution]
 
 ## Introduction
 
-If you’re an existing Salesforce Marketing Cloud Engagement customer starting down the path toward **MCE+**, Salesforce’s on-ramp to the on-core Agentforce Marketing, the first major step is standing up **Data 360**.
+If you’re an existing Salesforce Marketing Cloud Engagement customer starting down the path toward **MCE+**, Salesforce’s on-ramp to the on-core Agentforce Marketing, the first major step is standing up **Data 360** (the artist formally known as Data Cloud).
 
 Data 360 is not difficult to get started with. You can ingest data, create unified profiles, and activate audiences surprisingly quickly. Things *do* get more complex as you move into AI-driven use cases, but the foundational setup required to support MCE+ is straightforward.
 
