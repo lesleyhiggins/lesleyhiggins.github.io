@@ -1,12 +1,10 @@
 
-
 ---
-title: "Plan Your Move to Agentforce Marketing: Mapping Data 360 for B2B and B2C Marketing"
-subtitle: "Standard Contact Model vs Person Accounts"
-date: 2026-01-19
 layout: post
-categories: [Salesforce, Data 360, Marketing Cloud]
-tags: [Salesforce Data 360, Person Accounts, B2B, B2C, Identity Resolution]
+title: "Plan Your Move to Agentforce Marketing: Mapping Data 360 for B2B and B2C Marketing"
+date: 2026-01-19
+categories: ["marketing-cloud", "salesforce", "data-360"]
+description: "Essential guidance for Marketing Cloud customers transitioning to Agentforce Marketing. Learn correct Data 360 setup, Person Accounts vs Standard Contact models, identity resolution best practices, and how to avoid costly architectural mistakes that limit scalability."
 thumbnail: /assets/images/gen/blog/Data-360-Mapping.png
 ---
 
@@ -38,7 +36,7 @@ The Standard Contact Model is the traditional B2B CRM structure:
 - Contacts represent individuals associated with those companies  
 - Contacts may relate to multiple accounts  
 
-This model is best suited for account-based marketing, complex buying committees, and organizations with parent/child account hierarchies. In this model, the account—not the individual—is the primary anchor.
+This model is best suited for account-based marketing, complex buying committees, and organizations with parent/child account hierarchies. In this model, the account, not the individual, is the primary anchor.
 
 ### Person Accounts (B2C)
 
@@ -76,7 +74,7 @@ Avoid collapsing individuals solely based on shared email domains, which can cre
 
 When using Person Accounts, the **Individual DMO must represent the human being**—not the Salesforce Account abstraction.
 
-When in doubt, remember: people are people. Try not to get this song stuck in your head:
+When in doubt, remember: people are people, and try not to get this song stuck in your head:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DTYsElEGswc" frameborder="0" allowfullscreen></iframe>
 
@@ -84,33 +82,28 @@ When in doubt, remember: people are people. Try not to get this song stuck in yo
 
 The safest and most scalable pattern looks like this:
 
-- **Map the Contact object to the Individual DMO**
+- Map the Contact object to the Individual DMO
   - Use **ContactId as IndividualId**
-- **Map the Contact object to the Account Contact DMO**
-- **Map the Account object to the Account DMO**
+- Map the Contact object to the Account Contact DMO
+- Map the Account object to the Account DMO
 
 This ensures that Data 360 creates **one Individual per human**, even though Person Accounts technically consist of both an Account and a Contact under the hood.
 
-If the Account object contains customer attributes that do not exist on Contact (for example, a Shopify ID), it is acceptable to also map those Account fields to the Individual **as enrichment only**. In that case, the **PersonContactId must still map to IndividualId** so the data enriches the same Individual record.
+If the Account object contains customer attributes that do not exist on Contact (for example, a Shopify ID), it is acceptable to also map those Account fields to the Individual **as enrichment only**. In that case, the **PersonContactId must still map to Individual Id** so the data enriches the same Individual record.
 
-Under no circumstances should **AccountId** be used as the IndividualId.
+Under no circumstances should **AccountId** be used as the Individual Id.
 
 ### Why This Matters for Activation and Marketing Cloud
 
-This mapping approach naturally results in **ContactId being used as the Subscriber Key in Marketing Cloud**. For most orgs, this aligns with how Marketing Cloud has historically been implemented using synchronized data extensions or Salesforce Data Entry Events.
+This mapping approach naturally results in **ContactId being used as the SubscriberKey in Marketing Cloud**. For most orgs, this aligns with how Marketing Cloud has historically been implemented using synchronized data extensions, Salesforce Data Entry Events, or Reports and Campaigns in Salesforce Sends. 
 
 Using AccountId as the IndividualId introduces serious downstream risk:
 
-- Duplicate Subscriber Keys in Marketing Cloud  
+- Duplicate SubscriberKeys in Marketing Cloud  
 - Fragmented unsubscribe management  
-- Inflated contact counts (which you will be billed for)  
-- Limited ability to adopt future Data 360 features such as triggered journeys  
-
-Although Person Accounts appear as “Accounts” in the Salesforce UI, they are a **junction of an Account and a Contact**. In Data 360, the Individual DMO always represents the person you communicate with.
-
-We market to **people**—contacts and leads—not to accounts.
-
-Implementations anchored to AccountId often work at first, but tend to require painful rework as Data 360 functionality expands.
+- Inflated Contact counts (which you will be billed for)  
+- Limited ability to adopt future Data 360 features such as Flow-triggered journeys
+- The loss of Individual Email Results created by Marketing Cloud Connect
 
 ---
 
@@ -122,31 +115,9 @@ In these cases:
 
 - Continue mapping **Contact → Individual** using ContactId  
 - Map **all Accounts** (person and business) to the Account DMO  
-- Use segmentation, filtering, or Data Transforms to distinguish Person Accounts from business accounts  
+- Use segmentation, filtering, or Data Transforms to distinguish Person Accounts from Business Accounts  
 
 The Individual DMO should remain the **single representation of a human being** across both models. Avoid creating parallel identity paths simply because different CRM account types exist.
-
----
-
-## 5. Privacy and Consent Considerations
-
-### Personal Data Mapping
-
-All personal data ingested into Data 360 should be mapped to the **Individual entity** whenever possible. This ensures:
-
-- Personal data is included in Data Subject Rights (DSR) requests  
-- Consent and preference enforcement works consistently  
-
-If personal data must exist on another standard or custom object, create a clear relationship to the Individual using the Individual ID.
-
-### Consent and Preference Data
-
-If ingested data contains consent or preference fields:
-
-- Map them to objects in the **Privacy Data Model**, or  
-- Map them to standard or custom objects that are explicitly related to the Individual  
-
-This keeps consent enforcement centralized and avoids fragmented compliance logic.
 
 ---
 
@@ -165,15 +136,14 @@ This keeps consent enforcement centralized and avoids fragmented compliance logi
 
 Setting up Data 360 is easy. Setting it up *correctly* is what determines long-term success.
 
-Most Data 360 implementation issues are not caused by missing features—they are caused by early identity and mapping decisions that seemed harmless at the time.
+Most Data 360 implementation issues are not caused by missing features. They are caused by early identity and mapping decisions that seemed harmless at the time.
 
 By:
 
 - Treating the Individual DMO as the true person  
-- Using ContactId as the IndividualId for Person Accounts  
-- Avoiding junction DMOs for identity and engagement paths  
+- Using ContactId as the IndividualId for Person Accounts 
 - Anchoring B2B strategies on Accounts and B2C strategies on Individuals  
 
 You build a Data 360 foundation that is scalable, compliant, activation-ready, and resilient as the platform evolves.
 
-Getting this right early saves countless hours later—and gives your marketing teams the confidence to move fast without breaking things.
+Getting this right early saves countless hours later, and gives your marketing teams the confidence to move fast without breaking things.
