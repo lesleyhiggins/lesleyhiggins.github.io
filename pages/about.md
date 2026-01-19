@@ -32,7 +32,4 @@ We believe that the best marketing technology solutions combine technical precis
 We started **devLesley** to document the solutions we build and the challenges we solve. If you're a marketer, admin, or consultant navigating the Salesforce ecosystem, this space is for you. Expect code samples, design insights, real-world project stories, and tools you can adapt immediately.
 
 ### Let's Work Together  
-Whether you're building a marketing stack from scratch, exploring automation strategies, or need creative expertise to bring your campaigns to life — let's connect. Reach out via [Contact](/contact) and let's see how technology and creativity can accelerate your growth.
-
-Thanks for stopping by —  
-**The Team**
+Whether you're building a marketing stack from scratch, exploring automation strategies, or need creative expertise to bring your campaigns to life — let's connect. Reach out via [Contact](/contact)and let's see how technology and creativity can accelerate your growth.
