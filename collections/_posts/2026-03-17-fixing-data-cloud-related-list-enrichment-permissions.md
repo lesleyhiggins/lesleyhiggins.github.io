@@ -10,7 +10,7 @@ thumbnail: /assets/images/gen/blog/fixed-errors.png
 
 # Do you have users that are not able to see Related List Enrichments in Sales or Service Cloud?
 
-I just spent the last month of my life (in small doses) trying to expose Related List Enrichments to Service Reps without giving them the Data Cloud Architect permission set. No matter how many different ways I tried to follow Salesforce's own help article ([Create a Permission Set for a Related List Enrichment](https://help.salesforce.com/s/articleView?id=data.c360_a_create_a_related_list_permset.htm&type=5)), I continued to see this error: 
+I just spent the last month of my life (in small doses) trying to expose Related List Enrichments to Service Reps without giving them the Data Cloud Architect permission set. No matter how many different ways I tried to follow Salesforce's own help article (<a href="https://help.salesforce.com/s/articleView?id=data.c360_a_create_a_related_list_permset.htm&type=5" target="_blank" rel="noopener noreferrer">Create a Permission Set for a Related List Enrichment</a>), I continued to see this error: 
 
 > INVALID_TYPE: SELECT Id FROM DataSpace WHERE DataSpaceDefinition.DeveloperName ^ ERROR at Row:1:Column:16 sObject type 'DataSpace' is not supported.
 
@@ -23,7 +23,7 @@ Data Cloud Related List Enrichments are a great way to surface Data Cloud insigh
 
 But when you try to extend that visibility to regular users — say, a service rep who just needs to *see* the enrichment data — you hit a wall.
 
-Salesforce's own help article ([Create a Permission Set for a Related List Enrichment](https://help.salesforce.com/s/articleView?id=data.c360_a_create_a_related_list_permset.htm&type=5)) walks you through creating a custom permission set and configuring Data Cloud Data Space Management. That's all correct and necessary. But the article leaves out a critical step, which is what causes the `DataSpace` SOQL error.
+Salesforce's own help article (<a href="https://help.salesforce.com/s/articleView?id=data.c360_a_create_a_related_list_permset.htm&type=5" target="_blank" rel="noopener noreferrer">Create a Permission Set for a Related List Enrichment</a>) walks you through creating a custom permission set and configuring Data Cloud Data Space Management. That's all correct and necessary. But the article leaves out a critical step, which is what causes the `DataSpace` SOQL error.
 
 ## Why the Error Happens
 
