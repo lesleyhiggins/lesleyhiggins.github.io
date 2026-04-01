@@ -17,7 +17,9 @@ image: "/assets/images/gen/blog/repair-those-data-streams.png"
 
 ## The Problem Nobody Warned You About
 
-When Salesforce Marketing Cloud Engagement data is connected to Data 360 via the managed package, it creates a web of data streams, DMO mappings, relationships, segments, enrichments, and Lightning page component bindings that are deeply intertwined. When the time comes to restructure (whether you're cleaning up a messy initial implementation, upgrading to a new data model, or simply starting fresh), you will hit a wall of dependency errors.
+When Salesforce Marketing Cloud Engagement data is connected to Data 360 via the managed package, it creates a web of data streams, DMO mappings, relationships, segments, enrichments, and Lightning page component bindings that are deeply intertwined. 
+
+When the time comes to restructure (whether you're cleaning up a messy initial implementation, upgrading to a new data model, or simply starting fresh), you will hit a wall of dependency errors.
 
 The error message `Could not delete MktDataModelObject by developerName [DMO_Name] as DMO/DMO fields are in use` is your initiation. It is the platform's way of telling you that you skipped a step. Several steps, probably. And some of those steps involve things you haven't documented yet.
 
@@ -73,9 +75,13 @@ Data 360 enforces a strict dependency hierarchy. Attempting to delete in the wro
 
 **7. Semantic Models**: Any semantic models built on top of the data streams or DMOs must be deleted before you can proceed with DMO deletion.
 
-**8. DMO Record Pages and Relationships**: The Relationships tab on the DMO must be cleared of every relationship before the DMO itself can be deleted. This is a common blocker because the error message from the platform is generic (it tells you the DMO is in use but does not tell you which relationship is the culprit). Deleting each relationship one by one and waiting for metadata to propagate (typically 5–15 minutes) is the safest approach. Additionally, if any custom Lightning pages have been created for the DMO records themselves, these may need to be updated or removed.
+**8. DMO Record Pages and Relationships**: The Relationships tab on the DMO must be cleared of every relationship before the DMO itself can be deleted. This is a common blocker because the error message from the platform is generic (it tells you the DMO is in use but does not tell you which relationship is the culprit). 
 
-**9. Lightning Page Component Bindings**: This one is easy to miss. If any Data 360 component has been placed on a Lightning record page - whether it's in Salesforce Core or on a Data 360 DMO record page - and that component has been configured to display fields from a specific DMO, the platform will block field-level deletion with a `ComponentInstanceProperty` error referencing a `0AJ`-prefixed ID. Go to Setup → Lightning App Builder, find all console app pages, and remove any Data 360 enrichment components completely before attempting deletions, and go to Data Explorer, search for the DMO that is causing problems, view a record for the DMO and select Edit Page if any fields besides the Record Id is displayed.
+Deleting each relationship one by one and waiting for metadata to propagate (typically 5–15 minutes) is the safest approach. Additionally, if any custom Lightning pages have been created for the DMO records themselves, these may need to be updated or removed.
+
+**9. Lightning Page Component Bindings**: This one is easy to miss. If any Data 360 component has been placed on a Lightning record page (whether it's in Salesforce Core or on a Data 360 DMO record page) and that component has been configured to display fields from a specific DMO, the platform will block field-level deletion with a `ComponentInstanceProperty` error referencing a `0AJ`-prefixed ID.
+
+Go to Setup → Lightning App Builder, find all console app pages, and remove any Data 360 enrichment components completely before attempting deletions. Also go to Data Explorer, search for the DMO that is causing problems, view a record for the DMO and select Edit Page if any fields besides the Record Id is displayed.
 
 **10. Data Stream Field Mappings**: Once all dependencies above are cleared, you can remove the field mappings from the data stream itself.
 
@@ -91,13 +97,17 @@ Here is the key strategic insight that makes this whole process much cleaner: **
 
 ### Managed Package Streams: Full Teardown Is Correct
 
-Data streams created by the SFMC managed package (things like SFMC Email Engagement Open [BU number] and SFMC Contact Point Email [BU number]) can be fully unmapped and deleted as part of a proper infrastructure overhaul. These streams are recreated automatically when you reinstall or reconfigure the connector. Their DMO mappings are standardized and well-documented by Salesforce. There is no risk of losing institutional knowledge by tearing them down completely, because you are not the one who designed them. Just keep in mind that when you reingest those data streams, Marketing Cloud will only send 90 days worth of data. 
+Data streams created by the SFMC managed package (things like SFMC Email Engagement Open [BU number] and SFMC Contact Point Email [BU number]) can be fully unmapped and deleted as part of a proper infrastructure overhaul. These streams are recreated automatically when you reinstall or reconfigure the connector. 
+
+Their DMO mappings are standardized and well-documented by Salesforce. There is no risk of losing institutional knowledge by tearing them down completely, because you are not the one who designed them. Just keep in mind that when you reingest those data streams, Marketing Cloud will only send 90 days worth of data. 
 
 ### Custom SFMC DE Streams: Use a Placeholder Temp Stream Instead
 
 For data streams sourced from custom Marketing Cloud Data Extensions (especially those with complex multi-DMO mappings, custom field configurations, and extensive downstream dependencies), a full teardown becomes a massive pain when you've already invested significant time in building segments, relationships, calculated insights, enrichments, and other DMO-dependent configurations. 
 
-The problem is this: if you've spent weeks or months carefully mapping custom DE data across multiple DMOs and building segments, calculated insights, and relationships on top of those mappings, tearing down all those dependencies just to rebuild an identical structure with a new data stream is an enormous waste of time. You're forced to work through the entire dependency chain in reverse order, document every configuration, delete everything systematically, then rebuild it all from scratch. In many cases, you may spend hours trying to figure out where that last dependency is.
+The problem is this: if you've spent weeks or months carefully mapping custom DE data across multiple DMOs and building segments, calculated insights, and relationships on top of those mappings, tearing down all those dependencies just to rebuild an identical structure with a new data stream is an enormous waste of time. 
+
+You're forced to work through the entire dependency chain in reverse order, document every configuration, delete everything systematically, then rebuild it all from scratch. In many cases, you may spend hours trying to figure out where that last dependency is.
 
 **The solution: export the DE from Marketing Cloud, import it into Data 360 as a temporary file-based ingestion stream, replicate the existing field mappings on the temp stream, then remove the mappings from the original SFMC stream and delete it.**
 
@@ -129,7 +139,9 @@ Combining both strategies gives you a clean decision tree:
 
 **If the stream was created by the SFMC managed package connector:** Document it, clear its dependencies in order, and tear it down completely. Recreate from scratch with the new connector configuration.
 
-**If the stream was created from a custom Marketing Cloud Data Extension:** Export the DE from SFMC, import it as a temporary file-based stream in Data 360, replicate the mappings on the temp stream, then remove mappings from the original SFMC stream and delete it. The temp stream acts as a placeholder that keeps the DMO alive and all downstream dependencies intact while you rebuild the proper connection.
+**If the stream was created from a custom Marketing Cloud Data Extension:** Export the DE from SFMC, import it as a temporary file-based stream in Data 360, replicate the mappings on the temp stream, then remove mappings from the original SFMC stream and delete it. 
+
+The temp stream acts as a placeholder that keeps the DMO alive and all downstream dependencies intact while you rebuild the proper connection.
 
 In both cases, the golden rule is the same: **document before you delete**. Screenshots of every mapping view, every relationship table, every segment criteria screen, every RLE detail page. All of it. You will not regret the ten extra minutes it takes. You will absolutely regret skipping it.
 
