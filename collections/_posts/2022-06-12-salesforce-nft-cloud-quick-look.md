@@ -3,7 +3,7 @@ layout: post
 title: "Salesforce NFT Cloud Quick Look"
 date: 2022-06-12
 authors: ["Lesley Higgins"]
-categories: ["Salesforce", "Web3"]
+categories: ["Salesforce", "web3"]
 description: "First look at Salesforce NFT Cloud announced at Connections 2022. Explore the no-code NFT minting solution, wallet risk scoring, supported blockchain networks, and MetaMask integration built on Commerce Cloud."
 thumbnail: "/assets/images/gen/blog/nft-cloud.png"
 ---
