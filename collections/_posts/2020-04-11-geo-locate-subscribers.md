@@ -5,8 +5,8 @@ date: 2020-04-11
 authors: ["Lesley Higgins"]
 categories: ["Marketing Cloud"]
 description: Learn how to build an automation that captures leads from Facebook Ad Studio and automatically determines their nearest office location using Google's Geocode API, SQL, AMPScript, and SSJS.
-thumbnail: "/assets/images/gen/blog/geolocate-map-thumb.png"
-image: "/assets/images/gen/blog/geolocate-map-thumb.png"
+thumbnail: "/assets/images/gen/blog/geo-map.png"
+image: "/assets/images/gen/blog/geo-map.png"
 ---
 
 <p align="center">
