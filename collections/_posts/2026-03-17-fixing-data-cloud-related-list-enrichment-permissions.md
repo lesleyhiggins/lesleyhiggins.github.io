@@ -71,12 +71,48 @@ Make sure the user has both **Data Cloud User** and your custom permission set. 
 
 ## Quick Troubleshooting Guide
 
-| Symptom | Likely Cause |
-|---|---|
-| `sObject type 'DataSpace' is not supported` error | Missing **View All Records** on DataSpace, DataSpaceDefinition, and DataSpaceMember objects |
-| "Looks like you don't have access to the data space" | Missing **Data Cloud User** permission set or data space not enabled in Data Cloud Data Space Management |
-| Related List just doesn't appear at all | Check that the Related List Enrichment is added to the page layout and the user's profile has access to the parent object |
-| Works with Data Cloud Architect but not Data Cloud User | The gap is almost always the View All Records permissions on the three DataSpace objects described above |
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+<thead>
+<tr style="background-color: #f8f9fa;">
+<th style="padding: 12px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Symptom</th>
+<th style="padding: 12px; border: 1px solid #dee2e6; text-align: left; font-weight: bold;">Likely Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+<code>sObject type 'DataSpace' is not supported</code> error
+</td>
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+Missing <strong>View All Records</strong> on DataSpace, DataSpaceDefinition, and DataSpaceMember objects
+</td>
+</tr>
+<tr style="background-color: #f8f9fa;">
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+"Looks like you don't have access to the data space"
+</td>
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+Missing <strong>Data Cloud User</strong> permission set or data space not enabled in Data Cloud Data Space Management
+</td>
+</tr>
+<tr>
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+Related List just doesn't appear at all
+</td>
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+Check that the Related List Enrichment is added to the page layout and the user's profile has access to the parent object
+</td>
+</tr>
+<tr style="background-color: #f8f9fa;">
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+Works with Data Cloud Architect but not Data Cloud User
+</td>
+<td style="padding: 12px; border: 1px solid #dee2e6; vertical-align: top;">
+The gap is almost always the View All Records permissions on the three DataSpace objects described above
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Wrapping Up
 
