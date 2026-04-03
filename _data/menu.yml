@@ -15,6 +15,9 @@ main:
       - name: "Salesforce CRM"
         description: "Articles on Salesforce CRM, customer relationship management, and sales automation."
         url: /category/salesforce/
+      - name: "AI"
+        description: "Articles on artificial intelligence, machine learning, and automation trends."
+        url: /category/ai/
       - name: "Slack"
         description: "Slack from a developers perspective."
         url: /category/slack/

@@ -18,7 +18,7 @@ The new feature has two elements: **inbox previews** and **in-email previews**. 
 Inbox preview summaries and in-email summaries are similar but not identical, due to in-email summaries having a higher character count limit.
 
 <p align="center">
-  <img src="/assets/images/gen/blog/b-and-b-email.png" alt="Apple Mail inbox preview example" width="600">
+  <img src="/assets/images/gen/blog/b-and-b-email.png" alt="Apple Mail inbox preview example" width="500">
 </p>
 
 By the way, I'm much more likely to open a Bumble and Bumble email that summarizes the discount in the preview without making me sift through graphics first.
@@ -26,7 +26,7 @@ By the way, I'm much more likely to open a Bumble and Bumble email that summariz
 It's worth noting that Apple Mail users must actively click "Summarize" within an email to see the in-email summary. Since this requires an extra step, it'll be interesting to see how users adopt this feature and whether it evolves over time.
 
 <p align="center">
-  <img src="/assets/images/gen/blog/a-basin-email.png" alt="Apple Mail in-email summary feature" width="600">
+  <img src="/assets/images/gen/blog/a-basin-email.png" alt="Apple Mail in-email summary feature" width="500">
 </p>
 
 ## What This Means for Email Marketers
@@ -36,7 +36,7 @@ It's worth noting that Apple Mail users must actively click "Summarize" within a
 For example, here's the inbox view of an email from E-Trade. Previously, I had to open this email to see my eye-popping dividend. Now, Apple summarizes it for me. I know there's nothing else worthwhile in this email, so I can simply swipe left and archive it unread. 
 
 <p align="center">
-  <img src="/assets/images/gen/blog/e-trade-ai-preview.png" alt="E-Trade email summary in Apple Mail" width="600">
+  <img src="/assets/images/gen/blog/e-trade-ai-preview.png" alt="E-Trade email summary in Apple Mail" width="500">
 </p>
 
 Is it still a relevant notice? Absolutely. Is it bad that I am no longer opening this email? Since open metrics are mostly useless at this point anyway, then I don't think it really matters. For all I know, Apple is telling E-trade that I opened this email.
@@ -50,7 +50,7 @@ Is it still a relevant notice? Absolutely. Is it bad that I am no longer opening
 As mentioned earlier, I'm more likely to open an email when Apple's AI provides relevant information that interests me.
 
 <p align="center">
-  <img src="/assets/images/gen/blog/roka-ai-preview.png" alt="ROKA email enhanced by Apple AI" width="600">
+  <img src="/assets/images/gen/blog/roka-ai-preview.png" alt="ROKA email enhanced by Apple AI" width="500">
 </p>
 
 The original pre-header stated "30% off select performance sunglasses!" While the AI summary isn't drastically different, it does offer a few more details, making it more enticing.
@@ -64,7 +64,7 @@ The original pre-header stated "30% off select performance sunglasses!" While th
 On that note, Apple's AI struggles to summarize emails that consist primarily of images. This limitation adds another reason to avoid creating all-image emails. When the AI can't find text in the email body, it resorts to extracting information from the footer—often leading to irrelevant or unhelpful summaries.
 
 <p align="center">
-  <img src="/assets/images/gen/blog/veronica-beard-email.png" alt="Apple Mail struggling with image-heavy email" width="600">
+  <img src="/assets/images/gen/blog/veronica-beard-email.png" alt="Apple Mail struggling with image-heavy email" width="500">
 </p>
 
 ### Key Takeaway #3: Stop Sending All-Image Emails!
