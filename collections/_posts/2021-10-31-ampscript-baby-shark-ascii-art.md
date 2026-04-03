@@ -8,7 +8,7 @@ description: "A creative AMPScript coding challenge to output song lyrics in ASC
 thumbnail: "/assets/images/gen/blog/baby-shark-thumbnail.png"
 ---
 
-A bit over a year ago, the group at <a href="https://www.howtofmc.com/" target="_blank">HowToSFMC</a> issued a challenge to produce a CloudPage that output the lyrics to Baby Shark using the **fewest characters possible**. I thought I was up to the challenge and spent many hours trying to eliminate characters in my code. Eventually I obtained insider info that my character count was nowhere near the lowest, and came to accept that I did not quite have the programming chops to write the winning code.
+A bit over a year ago, the group at <a href="https://www.howtosfmc.com/" target="_blank">HowToSFMC</a> issued a challenge to produce a CloudPage that output the lyrics to Baby Shark using the **fewest characters possible**. I thought I was up to the challenge and spent many hours trying to eliminate characters in my code. Eventually I obtained insider info that my character count was nowhere near the lowest, and came to accept that I did not quite have the programming chops to write the winning code.
 
 So, I shifted my focus to the **most creative category** and spent several hours of my life attempting to output the lyrics in the shape of a shark using AMPScript.
 
@@ -26,7 +26,9 @@ Next
 ]%%
 %%[
 FOR @c=1 to 36 DO
-Output(Concat(IIF(@c<5,'Baby ',IIF(@c<9,'Mommy ',IIF(@c<13,'Daddy ',IIF(@c<17,'Grandma ',IIF(@c<21,'Grandpa ',IIF(@c<25,'Let''s go hunt',IIF(@c<28,'Run away',IIF(@c<33,'Safe at last','It''s the end')))))))),IIF(@c<21,'shark',''),IIF(mod(@c,4)<1,'!',', doo doo doo doo doo doo'),'<br>'))
+Output(Concat(IIF(@c<5,'Baby ',IIF(@c<9,'Mommy ',IIF(@c<13,'Daddy ',IIF(@c<17,'Grandma ',IIF(@c<21,'Grandpa ',IIF(@c<25,'Let''s go hunt',
+    IIF(@c<28,'Run away',IIF(@c<33,'Safe at last','It''s the end')))))))),IIF(@c<21,'shark',''),IIF(mod(@c,4)<1,'!',', doo doo doo doo doo doo'),
+    '<br>'))
 NEXT
 ]%%
 ```
