@@ -5,12 +5,15 @@ date: 2020-04-11
 authors: ["Lesley Higgins"]
 categories: ["Marketing Cloud"]
 description: Learn how to build an automation that captures leads from Facebook Ad Studio and automatically determines their nearest office location using Google's Geocode API, SQL, AMPScript, and SSJS.
-thumbnail: "/assets/images/gen/blog/geolocate-map.mp4"
-image: "/assets/images/gen/blog/geolocate-map.mp4"
+thumbnail: "/assets/images/gen/blog/geolocate-map-thumb.png"
+image: "/assets/images/gen/blog/geolocate-map-thumb.png"
 ---
 
 <p align="center">
-  <img src="/assets/images/gen/blog/geolocate-map.mp4" alt="Geo-locate subscribers to nearest office illustration" width="800">
+  <video width="800" autoplay loop muted playsinline style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <source src="/assets/images/gen/blog/geolocate-map.mp4" type="video/mp4">
+    <img src="/assets/images/gen/blog/geolocate-map-thumb.png" alt="Geo-locate subscribers to nearest office illustration" width="800">
+  </video>
 </p>
 
 ## Requirements
@@ -19,7 +22,7 @@ image: "/assets/images/gen/blog/geolocate-map.mp4"
 - **Bonus:** CloudPages and Email Studio
 - **Code Skills:** SQL, AMPScript, SSJS, oh my!
 
-This is an automation that I was very excited to finally piece together. Shout out to Traversy Media and Adam Spriggs for putting solutions out into the universe that I relied on heavily while piecing together the following solution.
+This is an automation that I was very excited to finally piece together. Shout out to [Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA) and [Adam Spriggs](https://sprignaturemoves.com/geolocation-in-sfmc/) for putting solutions out into the universe that I relied on heavily while piecing together the following solution.
 
 ## The Challenge
 
@@ -93,13 +96,13 @@ I replaced # signs with just a space. You could also replace it with Apt, Ste, t
 
 ### Step 3: Set Up Google's Geocoding API
 
-Sign up for Google's API. You will need to sign up using a google login and start a new project. The "Getting Started" section on that page will walk you through the steps to get up and rolling. Once you have an API key, you are ready for the scripting step.
+Sign up for [Google's API](https://developers.google.com/maps/documentation/javascript/geocoding). You will need to sign up using a google login and start a new project. The "Getting Started" section on that page will walk you through the steps to get up and rolling. Once you have an API key, you are ready for the scripting step.
 
 You probably want to start this step by creating a CloudPage (if you have them enabled in your account). A CloudPage will allow you to test your code much quicker than where the code will ultimately live, which is in an HTML content block.
 
 ### Step 4: AMPScript and SSJS for Geocoding
 
-Using AMPScript, you are going to run new leads through a loop. To start, target the new leads that have not yet been through the Geocode API with a LookupRows, using Latitude and Longitude = 0. You could probably just use one of these, but it would be possible for someone to be located at 0 latitude OR 0 longitude. *What about 0 for both?* [Here's a link](https://en.wikipedia.org/wiki/Null_Island) so you can easily go down that rabbit hole...
+Using AMPScript, you are going to run new leads through a loop. To start, target the new leads that have not yet been through the Geocode API with a LookupRows, using Latitude and Longitude = 0. You could probably just use one of these, but it would be possible for someone to be located at 0 latitude OR 0 longitude. *What about 0 for both?* [Here's a link](https://www.thoughtco.com/prime-meridian-and-the-equator-intersect-4070819) so you can easily go down that rabbit hole...
 
 The reason we are grabbing only leads with a 0 in those fields (which was populated by the default settings on the data extension), is to minimize the volume of leads that are processed on each run. This is so the script doesn't time out and also to keep down the costs of making API calls. Google's Geocode API allows $200 per month free of API calls. If you avoid hitting that number, then you don't have to pay for this automation. From my limited experience, if you are a small business generating social leads you will never get anywhere near $200 per month.
 
