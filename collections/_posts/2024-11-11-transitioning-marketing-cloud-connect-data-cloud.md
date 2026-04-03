@@ -9,10 +9,6 @@ thumbnail: "/assets/images/gen/blog/whiite-legos.png"
 image: "/assets/images/gen/blog/whiite-legos.png"
 ---
 
-<p align="center">
-  <img src="/assets/images/gen/blog/whiite-legos.png" alt="Transitioning from Marketing Cloud Connect to Data Cloud" width="800">
-</p>
-
 Dreamforce 2024 made one thing very clear: **transitioning to Data Cloud is no longer optional** for organizations using Salesforce. The power of Data Cloud lies in its ability to serve as the backbone for customer data, providing a unified and accessible view across platforms. With this capability, Salesforce users can achieve more precise segmentation, efficient data handling, and real-time insights, making it a game-changer for Marketing Cloud users looking to leverage data at scale.
 
 While implementing Marketing Cloud on Core might be an eventual necessity, the immediate focus for most teams should be shifting away from Marketing Cloud Connect and moving toward **Data Cloud as a single source of truth** for customer segments. This transition enables Salesforce Core and Marketing Cloud Engagement to function in greater harmony, unlocking new levels of personalization and engagement with customers.
