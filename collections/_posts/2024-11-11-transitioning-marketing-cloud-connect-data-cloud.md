@@ -6,7 +6,6 @@ authors: ["Lesley Higgins"]
 categories: ["Marketing Cloud", "Data 360", "Salesforce"]
 description: "Navigate the essential transition from Marketing Cloud Connect to Data Cloud with a focus on data quality. Learn why clean data is crucial for cost optimization and successful implementation in Salesforce's new data architecture."
 thumbnail: "/assets/images/gen/blog/whiite-legos.png"
-image: "/assets/images/gen/blog/whiite-legos.png"
 ---
 
 Dreamforce 2024 made one thing very clear: **transitioning to Data Cloud is no longer optional** for organizations using Salesforce. The power of Data Cloud lies in its ability to serve as the backbone for customer data, providing a unified and accessible view across platforms. With this capability, Salesforce users can achieve more precise segmentation, efficient data handling, and real-time insights, making it a game-changer for Marketing Cloud users looking to leverage data at scale.
