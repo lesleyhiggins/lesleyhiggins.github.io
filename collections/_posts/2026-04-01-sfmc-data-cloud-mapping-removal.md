@@ -5,8 +5,7 @@ date: 2026-04-01
 authors: ["Lesley Higgins"]
 categories: ["Data 360", "Marketing Cloud"]
 description: A field guide to tearing down your Data 360 infrastructure without losing your mind or your mappings. Learn the proper dependency chain, when to use temporary streams, and how to avoid costly rebuild scenarios.
-thumbnail: "/assets/images/gen/blog/repair-those-data-streams.png"
-image: "/assets/images/gen/blog/repair-those-data-streams.png" 
+image: "/assets/images/gen/blog/data-streams.png" 
 ---
 
 # The Right Way to Remove SFMC Data Streams from Salesforce Data 360
