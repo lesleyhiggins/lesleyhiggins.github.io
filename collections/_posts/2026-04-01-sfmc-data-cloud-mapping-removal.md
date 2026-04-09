@@ -8,12 +8,6 @@ description: A field guide to tearing down your Data 360 infrastructure without 
 thumbnail: "/assets/images/gen/blog/data-streams.png" 
 ---
 
-# The Right Way to Remove SFMC Data Streams from Salesforce Data 360
-
-*A field guide to tearing down your Data 360 infrastructure without losing your mind or your mappings.*
-
----
-
 ## The Problem Nobody Warned You About
 
 When Salesforce Marketing Cloud Engagement data is connected to Data 360 via the managed package, it creates a web of data streams, DMO mappings, relationships, segments, enrichments, and Lightning page component bindings that are deeply intertwined. 
